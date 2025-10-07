@@ -12,26 +12,28 @@
 
     <body class="container-fluid bg-black text-white">
         <header> <!-- Шапка сайта -->
-            <img src="resources/three_days_of_rain.png" alt="Три дня дождя" class="img-fluid"> <!-- Изображение -->
+            <nav class="navbar navbar-expand-lg mt-2"> <!-- Контейнер для навигационной панели -->
+                <div class="container-fluid"> <!-- Контейнер, который расширяется на весь экран -->
+                    <a class="navbar-brand ms-4 link-light fw-bold fs-4 pt-2" href="https://everydayrain.com">
+                        <img src="resources/site_ico.png" alt="" width="55" height="50" class="d-inline-block me-2 img-fluid">
+                        Три Дня Дождя
+                    </a> <!-- Название компании и её логотип -->
 
-            <div class="row pt-4"> <!-- Контейнер -->
-                <div class="col-sm-2"> <!-- Колонка 1 -->
-                    <img src="resources/site_ico.png" alt="Три дня дождя" class="img-fluid"> <!-- Изображение -->
-                </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Переключатель навигации">
+                        <img src="resources/navigation.png" alt="Кнопка для раскрытия меню" width="22" height="20" class="img-fluid"> <!-- Изображение -->
+                    </button> <!-- "Бургер для мобильных устройств" -->
 
-                <div class="col-sm-10"> <!-- Колонка 2 -->
-                    <div> <!-- Контейнер -->
-                        <h1 class="p-3">Содержание</h1> <!-- Заголовок уровня 1 -->
-
-                        <ul> <!-- Маркированный список -->
-                            <li><a href="#history" class="text-white">История</a></li> <!-- Пункт 1 -->
-                            <li><a href="#biography" class="text-white">Биография фронтмена</a></li> <!-- Пункт 2 -->
-                            <li><a href="#current-activity" class="text-white">Последние синглы</a></li> <!-- Пункт 3 -->
-                        </ul>
+                    <div class="collapse navbar-collapse pt-1" id="navbar-content"> <!-- Контейнер -->
+                        <div class="navbar-nav"> <!-- Контейнер -->
+                            <a class="nav-link link-light" href="#history">История</a> <!-- Ссылка -->
+                            <a class="nav-link link-light" href="#biography">Биография фронтмена</a> <!-- Ссылка -->
+                            <a class="nav-link link-light" href="#current-activity">Последние синглы</a> <!-- Ссылка -->
+                        </div>
                     </div>
                 </div>
-            </div>
+            </nav>
 
+            <img src="resources/three_days_of_rain.png" alt="Три дня дождя" class="img-fluid"> <!-- Изображение -->
         </header>
 
         <main class="container my-5"> <!-- Основное содержимое сайта -->
@@ -124,23 +126,23 @@
             <section class="pt-5"> <!-- Раздел с последними синглами -->
                 <h2 id="current-activity">Последние альбомы/синглы</h2> <!-- Заголовок уровня 2 -->
 
-                <div class="row pt-2"> <!-- Контейнер -->
-                    <div class="col-sm-3"> <!-- Колонка 1 -->
+                <div class="row"> <!-- Контейнер -->
+                    <div class="col-sm-3 col-md-6 col-lg-3 pt-4"> <!-- Колонка 1 -->
                         <h5 class=pt-2>Висхолдинг</h5> <!-- Заголовок уровня 5 -->
                         <img src="resources/visholding.jpg" alt="Висхолдинг" class="img-fluid pt-1"> <!-- Изображение -->
                     </div>
 
-                    <div class="col-sm-3"> <!-- Колонка 2 -->
+                    <div class="col-sm-3 col-md-6 col-lg-3 pt-4"> <!-- Колонка 2 -->
                         <h5 class=pt-2>Kryptonite</h5> <!-- Заголовок уровня 5 -->
                         <img src="resources/kryptonite.jpg" alt="Kryptonite" class="img-fluid pt-1"> <!-- Изображение -->
                     </div>
 
-                    <div class="col-sm-3"> <!-- Колонка 3 -->
+                    <div class="col-sm-3 col-md-6 col-lg-3 pt-4"> <!-- Колонка 3 -->
                         <h5 class=pt-2>Байполар</h5> <!-- Заголовок уровня 5 -->
                         <img src="resources/baypolar.jpg" alt="Байполар" class="img-fluid pt-1"> <!-- Изображение -->
                     </div>
 
-                    <div class="col-sm-3"> <!-- Колонка 4 -->
+                    <div class="col-sm-3 col-md-6 col-lg-3 pt-4"> <!-- Колонка 4 -->
                         <h5 class=pt-2>Где ты</h5> <!-- Заголовок уровня 5 -->
                         <img src="resources/gde_ty.jpg" alt="Где ты" class="img-fluid pt-1"> <!-- Изображение -->
                     </div>
@@ -149,8 +151,16 @@
         </main>
 
         <footer class="container-fluid"> <!-- Нижняя часть сайта -->
-            <p>Курчин Михаил ТИП-51 2025</p> <!-- Абзац -->
-            <p class="text-danger">@shqtes</p> <!-- Абзац -->
+            <div class="d-flex justify-content-between"> <!-- Строка -->
+                <div> <!-- Столбец 1 -->
+                    <p>Курчин Михаил ТИП-51 2025</p> <!-- Абзац -->
+                    <p class="text-danger">@shqtes</p> <!-- Абзац -->
+                </div>
+
+                <div> <!-- Столбец 2 -->
+                    <a href="https://t.me/everydayrain"><img src="resources/telegram.webp" alt="Телеграм" class="img-fluid pt-1" width="50" height="50"></a> <!-- Ссылка -->
+                </div>
+            </div>
         </footer>
     </body>
 </html>
