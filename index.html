@@ -7,6 +7,7 @@
         <meta name="description" content="Это страница о группе Три Дня Дождя"> <!-- Информация о сайте для поисковых систем -->
         <link rel="shortcut icon" type="image/x-icon" href="resources/site_ico.png"> <!-- Установить иконку для вкладки браузера -->
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> <!-- Подключить CSS-модули фреймворка Bootstrap -->
+        <link href="css/styles.css" rel="stylesheet"> <!-- Подключить свой CSS-модуль -->
         <script src="bootstrap/js/bootstrap.js"></script> <!-- Подключить JS-модули фреймворка Bootstrap -->
     </head>
 
@@ -28,6 +29,7 @@
                             <a class="nav-link link-light" href="#history">История</a> <!-- Ссылка -->
                             <a class="nav-link link-light" href="#biography">Биография фронтмена</a> <!-- Ссылка -->
                             <a class="nav-link link-light" href="#current-activity">Последние синглы</a> <!-- Ссылка -->
+                            <a class="nav-link link-light" href="#clips">Клипы</a> <!-- Ссылка -->
                         </div>
                     </div>
                 </div>
@@ -126,26 +128,42 @@
             <section class="pt-5"> <!-- Раздел с последними синглами -->
                 <h2 id="current-activity">Последние альбомы/синглы</h2> <!-- Заголовок уровня 2 -->
 
-                <div class="row"> <!-- Контейнер -->
-                    <div class="col-sm-3 col-md-6 col-lg-3 pt-4"> <!-- Колонка 1 -->
+                <div class="row d-flex flex-nowrap overflow-auto"> <!-- Контейнер -->
+                    <div class="col-sm-3 col-md-6 col-lg-3 pt-4 mx-2 card-hover"> <!-- Колонка 1 -->
                         <h5 class=pt-2>Висхолдинг</h5> <!-- Заголовок уровня 5 -->
                         <img src="resources/visholding.jpg" alt="Висхолдинг" class="img-fluid pt-1"> <!-- Изображение -->
                     </div>
 
-                    <div class="col-sm-3 col-md-6 col-lg-3 pt-4"> <!-- Колонка 2 -->
+                    <div class="col-sm-3 col-md-6 col-lg-3 pt-4 mx-2 card-hover"> <!-- Колонка 2 -->
                         <h5 class=pt-2>Kryptonite</h5> <!-- Заголовок уровня 5 -->
                         <img src="resources/kryptonite.jpg" alt="Kryptonite" class="img-fluid pt-1"> <!-- Изображение -->
                     </div>
 
-                    <div class="col-sm-3 col-md-6 col-lg-3 pt-4"> <!-- Колонка 3 -->
+                    <div class="col-sm-3 col-md-6 col-lg-3 pt-4 mx-2 card-hover"> <!-- Колонка 3 -->
                         <h5 class=pt-2>Байполар</h5> <!-- Заголовок уровня 5 -->
                         <img src="resources/baypolar.jpg" alt="Байполар" class="img-fluid pt-1"> <!-- Изображение -->
                     </div>
 
-                    <div class="col-sm-3 col-md-6 col-lg-3 pt-4"> <!-- Колонка 4 -->
+                    <div class="col-sm-3 col-md-6 col-lg-3 pt-4 mx-2 card-hover"> <!-- Колонка 4 -->
                         <h5 class=pt-2>Где ты</h5> <!-- Заголовок уровня 5 -->
                         <img src="resources/gde_ty.jpg" alt="Где ты" class="img-fluid pt-1"> <!-- Изображение -->
                     </div>
+
+                    <div class="col-sm-3 col-md-6 col-lg-3 pt-4 mx-2 card-hover"> <!-- Колонка 3 -->
+                        <h5 class=pt-2>Интро/Дом</h5> <!-- Заголовок уровня 5 -->
+                        <img src="resources/introdom.jpg" alt="Интро/Дом" class="img-fluid pt-1"> <!-- Изображение -->
+                    </div>
+                </div>
+            </section>
+
+            <section class="pt-5"> <!-- Раздел с клипами -->
+                <h2 id="clips">Клипы</h2> <!-- Заголовок уровня 2 -->
+
+                <h5 class="pt-4">Интро/Дом</h5> <!-- Заголовок уровня 5 -->
+                <div> <!-- Контейнер для видео -->
+                    <video class="container-fluid" src="resources/introdom.mp4" controls>
+                        <p>Ваш браузер не поддерживает воспроизведение видео</p>
+                    </video>
                 </div>
             </section>
         </main>
